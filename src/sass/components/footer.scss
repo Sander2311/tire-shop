@@ -1,0 +1,182 @@
+.footer {
+  min-height: 696px;
+  background: #000000 url('../img/footer-bg.png') no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  padding-top: 80px;
+  padding-bottom: 30px;
+
+  @include tablet-df {
+    padding-top: 50px;
+  }
+
+  @include mobile {
+    background: #000000 url('../img/footer-mobile-bg.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 30px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 90px;
+
+    @include tablet-df {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 36px;
+    }
+  }
+
+  &__img {
+    margin-right: 50px;
+
+    @include tablet-df {
+      margin-right: 0;
+      margin-bottom: 26px;
+    }
+  }
+
+  &__text {
+    max-width: 715px;
+
+    @media (max-width:1096px) {
+      max-width: 610px;
+    }
+
+    @include tablet-df {
+      text-align: justify;
+    }
+
+    @include mobile {
+      font-size: 14px;
+    }
+  }
+
+  &__form-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+
+    @include tablet-df {
+      margin-bottom: 70px;
+    }
+
+    @include mobile {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__form-title {
+    color: $whiteColor;
+    margin-bottom: 16px;
+
+    @include mobile {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__form {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    width: 100%;
+
+    @include tablet-df {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__form-inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__form-label {
+    color: #FFFDFD;
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+
+  &__form-star {
+    display: inline-block;
+    margin-right: 5px;
+    color: $accentColor;
+  }
+
+  &__form-input {
+    padding: 16px 22px;
+    background: $whiteColor;
+    border-radius: 10px;
+    border: none;
+    margin-right: 20px;
+    min-width: 254px;
+    caret-color: $accentColor;
+    color: $darkGrayColor;
+
+    &::placeholder {
+      font-size: 16px;
+      color: $darkGrayColor;
+    }
+
+    @media (max-width:1096px) {
+      min-width: 200px;
+    }
+
+    @include tablet-df {
+      margin-right: 0;
+      margin-bottom: 16px;
+      min-width: 280px;
+    }
+  }
+
+  &__form-btn {
+    min-width: 254px;
+    max-height: 50px;
+
+    @media (max-width:1096px) {
+      min-width: 200px;
+    }
+
+    @include tablet-df {
+      margin-top: 20px;
+      min-width: 280px;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+
+    @include tablet-df {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__logo {
+    width: 87px;
+    height: 40px;
+
+    @include tablet-df {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__copyright {
+    font-size: 14px;
+
+    @include tablet-df {
+      text-align: center;
+    }
+  }
+}
