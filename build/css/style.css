@@ -5,7 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -536,3 +536,488 @@ input:-webkit-autofill {
     @media (max-width: 1023px) {
       .footer__copyright {
         text-align: center; } }
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif; }
+
+.conteiner {
+  width: 95%;
+  margin: 0 auto; }
+
+.header {
+  background-color: #1A1E29;
+  position: relative; }
+  .header .nav {
+    width: 50%;
+    margin-left: 20px;
+    padding: 28px 0; }
+    .header .nav__menu {
+      display: flex; }
+    .header .nav__item {
+      position: relative;
+      margin-right: 43px; }
+      .header .nav__item-name {
+        display: flex;
+        align-items: center; }
+      .header .nav__item:hover .nav__inner-menu {
+        display: block;
+        position: absolute;
+        background-color: #1A1E29;
+        padding: 5px; }
+    .header .nav__link {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #FFFFFF;
+      margin-right: 7px; }
+    .header .nav__inner-menu {
+      display: none; }
+    .header .nav__inner-item {
+      margin-bottom: 10px;
+      border-bottom: 1px solid #FFFFFF; }
+      .header .nav__inner-item:last-child {
+        margin-bottom: 0; }
+      .header .nav__inner-item:hover {
+        background-color: #FF7E00; }
+    .header .nav__inner-link {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #FFFFFF;
+      margin-right: 7px; }
+  .header__logo {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96px;
+    height: 96px;
+    left: 49%;
+    bottom: -20px;
+    background-color: #1A1E29;
+    border-radius: 16px; }
+    .header__logo-img {
+      width: 64px;
+      height: 64px; }
+
+.main-title {
+  height: 384px;
+  background-image: url("../img/main-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .main-title__title-block {
+    width: 50%;
+    margin-left: 50%;
+    padding: 64px 0 5px 0; }
+  .main-title__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    color: #FFFFFF;
+    background-color: #FF7E00;
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content; }
+    .main-title__title:last-of-type {
+      margin-bottom: 16px; }
+  .main-title__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    color: #FF7E00;
+    padding: 12px 24px; }
+
+.select {
+  margin-bottom: 40px; }
+  .select .conteiner {
+    padding: 16px 0 33px 0;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    border-bottom: 1px solid #E5E5E5;
+    margin-top: -60px; }
+  .select__text-block {
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    color: #1A1E29;
+    margin-bottom: 24px; }
+  .select__w1 {
+    border-bottom: 1px solid #FF7E00; }
+  .select__w2 {
+    color: #4C65BD;
+    border-bottom: 1px dashed #4C65BD; }
+  .select__w3 {
+    border-bottom: 1px solid #FF7E00; }
+  .select__w4 {
+    color: #4C65BD;
+    border-bottom: 1px dashed #4C65BD; }
+  .select__form {
+    text-align: center; }
+  .select__input {
+    width: 184px;
+    padding: 12px 16px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #1A1E29;
+    margin-right: 24px;
+    margin-bottom: 16px; }
+    .select__input:last-of-type {
+      margin-right: 0; }
+  .select__btn {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 80px;
+    border: 1px solid #EFD8C3;
+    border-radius: 2px;
+    background-color: #FF7E00;
+    color: #FFFFFF; }
+    .select__btn:hover {
+      background-color: #FFFFFF;
+      color: #FF7E00; }
+
+.services {
+  margin-bottom: 40px; }
+  .services__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+    color: #1A1E29;
+    text-align: center;
+    margin-bottom: 32px; }
+  .services__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+  .services__item {
+    width: 392px;
+    min-height: 392px;
+    background-repeat: no-repeat;
+    border: 1px solid #E5E5E5;
+    border-radius: 2px;
+    margin-bottom: 32px; }
+  .services__img-1 {
+    background-image: url("../img/services-1.jpg"); }
+  .services__img-2 {
+    background-image: url("../img/services-2.jpg"); }
+  .services__img-3 {
+    background-image: url("../img/services-3.jpg"); }
+  .services__text {
+    background-color: #FFFFFF;
+    width: 96%;
+    margin: 0 auto;
+    margin-top: 63%;
+    padding: 16px 24px;
+    border-radius: 8px; }
+  .services__h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #1A1E29;
+    margin-bottom: 16px; }
+  .services__time-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px; }
+  .services__time-img {
+    width: 14px;
+    height: 14px;
+    margin-right: 9px; }
+  .services__time-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #6A6A6A; }
+  .services__money-block {
+    display: flex;
+    align-items: center; }
+  .services__money-img {
+    width: 12px;
+    height: 13px;
+    margin-right: 10px; }
+  .services__money-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #6A6A6A; }
+  .services__btn {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    border: 1px solid #EFD8C3;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+    color: #FF7E00; }
+    .services__btn:hover {
+      background-color: #FF7E00;
+      color: #FFFFFF; }
+
+.tires {
+  margin-bottom: 40px; }
+  .tires__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+    color: #1A1E29;
+    text-align: center;
+    margin-bottom: 32px; }
+  .tires__select-items {
+    display: flex;
+    max-width: 370px;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-bottom: 25px; }
+  .tires__select-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11.5px 16px;
+    border-bottom: 1px solid #E5E5E5; }
+    .tires__select-item_activ {
+      border-bottom: 1px solid #FF7E00; }
+      .tires__select-item_activ .tires__select-link {
+        color: #FF7E00; }
+  .tires__select-link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4C65BD; }
+  .tires__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+  .tires__item {
+    width: 288px;
+    min-height: 568px;
+    border: 1px solid #E5E5E5;
+    border-radius: 2px;
+    margin-bottom: 32px; }
+  .tires__padding {
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px 32px; }
+  .tires__feedback {
+    display: flex;
+    align-items: center;
+    margin-bottom: 9px; }
+  .tires__coment {
+    display: flex;
+    align-items: center;
+    margin-right: 16px; }
+    .tires__coment-img {
+      width: 14px;
+      height: 13px;
+      margin-right: 5px; }
+    .tires__coment-num {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      color: #6A6A6A; }
+  .tires__stars {
+    display: flex;
+    align-items: center; }
+  .tires__star {
+    margin-right: 5px; }
+    .tires__star-img {
+      width: 15.22px;
+      height: 14.47px; }
+  .tires__h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #1A1E29;
+    margin-bottom: 9px; }
+  .tires__icons {
+    display: flex;
+    align-items: center; }
+  .tires__icon {
+    margin-right: 11px; }
+  .tires__available {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #6A6A6A;
+    margin-bottom: 16px; }
+  .tires__price-block {
+    display: flex;
+    align-items: center; }
+  .tires__price {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 55px;
+    background-color: #FF7E00;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    margin-right: 16px; }
+  .tires__like {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px;
+    border: 1px solid #EFD8C3;
+    border-radius: 2px; }
+    .tires__like-img {
+      cursor: pointer; }
+      .tires__like-img:hover {
+        fill: #FF7E00; }
+  .tires__btn {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    border: 1px solid #EFD8C3;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+    color: #FF7E00; }
+    .tires__btn:hover {
+      background-color: #FF7E00;
+      color: #FFFFFF; }
+
+.disks {
+  margin-bottom: 40px; }
+  .disks__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+    color: #1A1E29;
+    text-align: center;
+    margin-bottom: 32px; }
+  .disks__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+  .disks__item {
+    width: 288px;
+    min-height: 568px;
+    border: 1px solid #E5E5E5;
+    border-radius: 2px;
+    margin-bottom: 32px; }
+  .disks__padding {
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px 32px; }
+  .disks__feedback {
+    display: flex;
+    align-items: center;
+    margin-bottom: 9px; }
+  .disks__coment {
+    display: flex;
+    align-items: center;
+    margin-right: 16px; }
+    .disks__coment-img {
+      width: 14px;
+      height: 13px;
+      margin-right: 5px; }
+    .disks__coment-num {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      color: #6A6A6A; }
+  .disks__stars {
+    display: flex;
+    align-items: center; }
+  .disks__star {
+    margin-right: 5px; }
+    .disks__star-img {
+      width: 15.22px;
+      height: 14.47px; }
+  .disks__h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #1A1E29;
+    margin-bottom: 8px; }
+  .disks__sizes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; }
+  .disks__size {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 16px;
+    color: #FF7E00;
+    margin-right: 12px;
+    margin-bottom: 5px;
+    padding: 0 4px;
+    background-color: #FFE9D5; }
+  .disks__available {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #6A6A6A;
+    margin-bottom: 16px; }
+  .disks__price-block {
+    display: flex;
+    align-items: center; }
+  .disks__price {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 55px;
+    background-color: #FF7E00;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    margin-right: 16px; }
+  .disks__like {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px;
+    border: 1px solid #EFD8C3;
+    border-radius: 2px; }
+    .disks__like-img {
+      cursor: pointer; }
+      .disks__like-img:hover {
+        fill: #FF7E00; }
+  .disks__btn {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    border: 1px solid #EFD8C3;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+    color: #FF7E00; }
+    .disks__btn:hover {
+      background-color: #FF7E00;
+      color: #FFFFFF; }
