@@ -10,8 +10,24 @@ body{
 }
 
 .conteiner{
-    width: 95%;
+    width: 1640px;
     margin: 0 auto;
+
+    @media (max-width: 1920px) {
+        width: 1170px;
+      }
+    
+    @media (max-width: 1400px) {
+        width: 992px;
+      }
+
+    @media (max-width: 990px) {
+        width: 767px;
+      }
+    
+    @media (max-width: 770px) {
+        width: 95%;
+      }
 }
 
 .header{
@@ -96,6 +112,16 @@ body{
         background-color:$darkColor;
         border-radius: 16px;
 
+        @media (max-width: 990px) {
+            left: 70%;
+            width: 90px;
+            height: 90px;
+          }
+
+        @media (max-width: 770px) {
+            display: none;
+        }
+
         &-img{
             width: 64px;
             height: 64px;
@@ -113,6 +139,11 @@ body{
         width: 50%;
         margin-left: 50%;
         padding: 64px 0 5px 0;
+
+        @media (max-width: 990px) {
+            width: 100%;
+            margin-left: 0;
+          }
     }
 
     &__title{
@@ -123,6 +154,11 @@ body{
         color: $whiteColor;
         background-color: $orangeColor;
         max-width: max-content;
+        
+
+        @media (max-width: 990px) {
+            margin: 0 auto;
+          }
 
         &:last-of-type{
             margin-bottom: 16px;
@@ -136,6 +172,10 @@ body{
         background-color: $whiteColor;
         color: $orangeColor;
         padding: 12px 24px;
+
+        @media (max-width: 990px) {
+            margin: 0 auto;
+          }
     }
 }
 
@@ -195,6 +235,10 @@ body{
 
         &:last-of-type{
             margin-right: 0;
+
+            @media (max-width: 770px) {
+                margin-right: 24px;
+            }
         }
     }
 
@@ -347,9 +391,9 @@ body{
 
     &__select-items{
         display: flex;
-        max-width: 370px;
+        flex-wrap: wrap;
         margin: 0 auto;
-        justify-content: space-between;
+        max-width: max-content;
         margin-bottom: 25px;
     }
 
@@ -884,16 +928,30 @@ body{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+
+        @media (max-width: 770px) {
+            justify-content: center;
+          }
     }
 
     &__block{
         display: flex;
         flex-wrap: wrap;
         
+        @media (max-width: 770px) {
+            justify-content: center;
+          }
 
         &:nth-of-type(2){
             margin-top: 70px;
             display: block;
+            background-color: $whiteColor;
+            border-radius: 10px;
+
+            @media (max-width: 770px) {
+                margin-top: 20px;
+                margin-bottom: 20px;
+              }
         }
     }
 
@@ -985,3 +1043,5 @@ body{
         cursor: pointer;
     }
 }
+
+

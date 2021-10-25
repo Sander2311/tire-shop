@@ -541,8 +541,20 @@ body {
   font-family: 'IBM Plex Sans', sans-serif; }
 
 .conteiner {
-  width: 95%;
+  width: 1640px;
   margin: 0 auto; }
+  @media (max-width: 1920px) {
+    .conteiner {
+      width: 1170px; } }
+  @media (max-width: 1400px) {
+    .conteiner {
+      width: 992px; } }
+  @media (max-width: 990px) {
+    .conteiner {
+      width: 767px; } }
+  @media (max-width: 770px) {
+    .conteiner {
+      width: 95%; } }
 
 .header {
   background-color: #1A1E29;
@@ -598,6 +610,14 @@ body {
     bottom: -20px;
     background-color: #1A1E29;
     border-radius: 16px; }
+    @media (max-width: 990px) {
+      .header__logo {
+        left: 70%;
+        width: 90px;
+        height: 90px; } }
+    @media (max-width: 770px) {
+      .header__logo {
+        display: none; } }
     .header__logo-img {
       width: 64px;
       height: 64px; }
@@ -611,6 +631,10 @@ body {
     width: 50%;
     margin-left: 50%;
     padding: 64px 0 5px 0; }
+    @media (max-width: 990px) {
+      .main-title__title-block {
+        width: 100%;
+        margin-left: 0; } }
   .main-title__title {
     font-style: normal;
     font-weight: 500;
@@ -621,6 +645,9 @@ body {
     max-width: -webkit-max-content;
     max-width: -moz-max-content;
     max-width: max-content; }
+    @media (max-width: 990px) {
+      .main-title__title {
+        margin: 0 auto; } }
     .main-title__title:last-of-type {
       margin-bottom: 16px; }
   .main-title__btn {
@@ -630,6 +657,9 @@ body {
     background-color: #FFFFFF;
     color: #FF7E00;
     padding: 12px 24px; }
+    @media (max-width: 990px) {
+      .main-title__btn {
+        margin: 0 auto; } }
 
 .select {
   margin-bottom: 40px; }
@@ -671,6 +701,9 @@ body {
     margin-bottom: 16px; }
     .select__input:last-of-type {
       margin-right: 0; }
+      @media (max-width: 770px) {
+        .select__input:last-of-type {
+          margin-right: 24px; } }
   .select__btn {
     margin: 0 auto;
     display: flex;
@@ -779,9 +812,11 @@ body {
     margin-bottom: 32px; }
   .tires__select-items {
     display: flex;
-    max-width: 370px;
+    flex-wrap: wrap;
     margin: 0 auto;
-    justify-content: space-between;
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
     margin-bottom: 25px; }
   .tires__select-item {
     display: flex;
@@ -1167,12 +1202,24 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; }
+    @media (max-width: 770px) {
+      .footer .conteiner {
+        justify-content: center; } }
   .footer__block {
     display: flex;
     flex-wrap: wrap; }
+    @media (max-width: 770px) {
+      .footer__block {
+        justify-content: center; } }
     .footer__block:nth-of-type(2) {
       margin-top: 70px;
-      display: block; }
+      display: block;
+      background-color: #FFFFFF;
+      border-radius: 10px; }
+      @media (max-width: 770px) {
+        .footer__block:nth-of-type(2) {
+          margin-top: 20px;
+          margin-bottom: 20px; } }
   .footer__list {
     width: 184px;
     margin-right: 24px; }
