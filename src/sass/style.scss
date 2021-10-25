@@ -10,29 +10,36 @@ body{
 }
 
 .conteiner{
-    width: 1640px;
     margin: 0 auto;
 
-    @media (max-width: 1920px) {
-        width: 1170px;
-      }
-    
-    @media (max-width: 1400px) {
+    @include xl{
+        width: 1200px;
+    }
+       
+    @include lg{
         width: 992px;
-      }
+    }
 
-    @media (max-width: 990px) {
-        width: 767px;
-      }
+    @include md{
+        width: 768px;
+    }
     
-    @media (max-width: 770px) {
-        width: 95%;
-      }
+    @include sm{
+        width: 576px;
+    }
+
+    @include xs{
+        width: 99%;
+    }
 }
 
 .header{
     background-color: $darkColor;
-    position: relative;
+    
+
+    .conteiner{
+        position: relative;
+    }
 
     .nav{
         width: 50%;
@@ -107,18 +114,18 @@ body{
         align-items: center;
         width: 96px;
         height: 96px;
-        left: 49%;
+        left: 48%;
         bottom: -20px;
         background-color:$darkColor;
         border-radius: 16px;
 
-        @media (max-width: 990px) {
+        @include md{
             left: 70%;
             width: 90px;
             height: 90px;
           }
 
-        @media (max-width: 770px) {
+        @include sm{
             display: none;
         }
 
@@ -140,7 +147,7 @@ body{
         margin-left: 50%;
         padding: 64px 0 5px 0;
 
-        @media (max-width: 990px) {
+        @include md{
             width: 100%;
             margin-left: 0;
           }
@@ -156,7 +163,7 @@ body{
         max-width: max-content;
         
 
-        @media (max-width: 990px) {
+        @include md{
             margin: 0 auto;
           }
 
@@ -173,7 +180,7 @@ body{
         color: $orangeColor;
         padding: 12px 24px;
 
-        @media (max-width: 990px) {
+        @include md{
             margin: 0 auto;
           }
     }
@@ -236,7 +243,7 @@ body{
         &:last-of-type{
             margin-right: 0;
 
-            @media (max-width: 770px) {
+            @include xs{
                 margin-right: 24px;
             }
         }
@@ -929,7 +936,7 @@ body{
         flex-wrap: wrap;
         justify-content: space-between;
 
-        @media (max-width: 770px) {
+        @include sm{
             justify-content: center;
           }
     }
@@ -938,7 +945,7 @@ body{
         display: flex;
         flex-wrap: wrap;
         
-        @media (max-width: 770px) {
+        @include sm{
             justify-content: center;
           }
 
@@ -948,7 +955,7 @@ body{
             background-color: $whiteColor;
             border-radius: 10px;
 
-            @media (max-width: 770px) {
+            @include sm{
                 margin-top: 20px;
                 margin-bottom: 20px;
               }
