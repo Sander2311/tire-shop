@@ -13,7 +13,7 @@ body{
     margin: 0 auto;
 
     @include xl{
-        width: 1200px;
+        width: 1224px;
     }
        
     @include lg{
@@ -114,7 +114,8 @@ body{
         align-items: center;
         width: 96px;
         height: 96px;
-        left: 48%;
+        left: 50%;
+        transform: translate(-50%);
         bottom: -20px;
         background-color:$darkColor;
         border-radius: 16px;
@@ -192,7 +193,7 @@ body{
     .conteiner{
         padding: 16px 0 33px 0;
         background-color: $whiteColor;
-        border-radius: 16px;
+        border-radius: 16px 16px 0 0;
         border-bottom: 1px solid #E5E5E5;
         margin-top: -60px;
     }
@@ -239,13 +240,74 @@ body{
         color: $darkColor;
         margin-right: 24px;
         margin-bottom: 16px;
+        background-image: url("../img/drop-down-dark.svg") ;
+        background-repeat:  no-repeat;
+        background-position:  90%;
+        border: 1px solid #E5E5E5;
+        border-radius: 2px;
+        -webkit-appearance: none; 
+
+        &:nth-of-type(1){
+            @include lg{
+                width: 30%;
+            }
+
+            @include md{
+                width: 50%;
+                margin-right: 0;
+            }
+        }
+
+        &:nth-of-type(2){
+            @include lg{
+                width: 30%;
+            }
+
+            @include md{
+                width: 50%;
+                margin-right: 0;
+            }
+        }
+
+        &:nth-of-type(3){
+            @include lg{
+                width: 30%;
+            }
+
+            @include md{
+                width: 50%;
+                margin-right: 0;
+            }
+        }
+
+        &:nth-of-type(4){
+            @include lg{
+                width: 30%;
+            }
+
+            @include md{
+                width: 50%;
+                margin-right: 0;
+            }
+        }
+
+        &:nth-of-type(5){
+            @include lg{
+                width: 30%;
+            }
+
+            @include md{
+                width: 50%;
+                margin-right: 0;
+            }
+        }
+
+        &:disabled{
+            background-color: #F5F5F5;
+        }
 
         &:last-of-type{
             margin-right: 0;
-
-            @include xs{
-                margin-right: 24px;
-            }
         }
     }
 
@@ -283,7 +345,7 @@ body{
     &__items{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: center;
     }
 
     &__item{
@@ -292,7 +354,17 @@ body{
         background-repeat: no-repeat;
         border: 1px solid #E5E5E5;
         border-radius: 2px;
+        margin-right: 24px;
         margin-bottom: 32px;
+
+        &:last-of-type{
+            margin-right: 0;
+        }
+
+        @include lg{
+            width: 290px;
+            margin-right: 20px;
+        }
     }
 
     &__img-1{
@@ -310,9 +382,8 @@ body{
 
     &__text{
         background-color: $whiteColor;
-        width: 96%;
-        margin: 0 auto;
-        margin-top: 63%;  
+        width: calc(100% - 20px);
+        margin: 250px auto 0;  
         padding: 16px 24px;
         border-radius: 8px;
     }
@@ -324,6 +395,10 @@ body{
         line-height: 32px;
         color: $darkColor;
         margin-bottom: 16px;
+
+        @include lg{
+            font-size: 22px;
+        }
     }
 
     &__time-block{
@@ -431,7 +506,7 @@ body{
     &__items{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: center;
     }
 
     &__item{
@@ -440,6 +515,11 @@ body{
         border: 1px solid #E5E5E5;
         border-radius: 2px;
         margin-bottom: 32px;
+        margin-right: 24px;
+
+        &:last-of-type{
+            margin-right: 0;
+        }
     }
 
     &__padding{
@@ -588,7 +668,7 @@ body{
     &__items{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: center;
     }
 
     &__item{
@@ -597,6 +677,12 @@ body{
         border: 1px solid #E5E5E5;
         border-radius: 2px;
         margin-bottom: 32px;
+
+        margin-right: 24px;
+
+        &:last-of-type{
+            margin-right: 0;
+        }
     }
 
     &__padding{
@@ -754,7 +840,7 @@ body{
     &__items{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: center;
     }
 
     &__item{
@@ -764,6 +850,16 @@ body{
         border: 1px solid #E5E5E5;
         border-radius: 2px;
         margin-bottom: 32px;
+        margin-right: 24px;
+
+        @include lg{
+            width: 290px;
+            margin-right: 20px;
+        }
+
+        &:last-of-type{
+            margin-right: 0;
+        }
     }
 
     &__img-1{
@@ -784,10 +880,9 @@ body{
         flex-direction: column;
         justify-content: space-between;
         background-color: $whiteColor;
-        width: 96%;
+        width: calc(100% - 20px);
         min-height: 192px;
-        margin: 0 auto;
-        margin-top: 63%;  
+        margin: 250px auto 0; 
         padding: 16px 24px;
         border-radius: 8px;
     }
@@ -799,6 +894,10 @@ body{
         line-height: 32px;
         color: $darkColor;
         margin-bottom: 8px;
+
+        @include lg{
+            font-size: 20px;
+        }
     }
 
     &__hashtegs{
@@ -869,11 +968,25 @@ body{
     .conteiner{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: center;
     }
 
     &__img-block{
         position: relative;
+        margin-right: 32px;
+
+        img{
+            @include lg{
+                width: 100%;
+            }
+        }
+
+        @include lg{
+            width: 100%;
+            margin-right: 0;
+        }
+
+
 
     &::after{
         position: absolute;
@@ -885,7 +998,11 @@ body{
     }
 
     &__text{
-        max-width: 592px;
+        width: 592px;
+
+        @include lg{
+            width: 100%;
+        }
     }
 
     &__title{
@@ -933,11 +1050,11 @@ body{
 
     .conteiner{
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
 
         @include sm{
             justify-content: center;
+            flex-wrap: wrap;
           }
     }
 
@@ -945,7 +1062,7 @@ body{
         display: flex;
         flex-wrap: wrap;
         
-        @include sm{
+        @include lg{
             justify-content: center;
           }
 
@@ -961,6 +1078,7 @@ body{
               }
         }
     }
+    
 
     &__list{
         width: 184px;
@@ -971,17 +1089,21 @@ body{
         }
 
         &-item{
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
-            line-height: 16px;
             margin-bottom: 16px;
-            color: $darkColor;
 
             &:first-of-type{
                 font-weight: 500;
                 color: $orangeColor;
             }
+        }
+
+        &-link{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 16px;
+                
+            color: $darkColor;
         }
     }
 
@@ -1037,17 +1159,23 @@ body{
         margin: 0 auto;
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: center;
     } 
     
     &__network{
         display: flex;
+        height: 40px;
         align-items: center;
         justify-content: center;
         padding: 13px;
         border: 1px solid #EFD8C3;
         border-radius: 2px;
         cursor: pointer;
+        margin-right: 8px;
+
+        &:last-of-type{
+            margin-right: 0;
+        }
     }
 }
 
